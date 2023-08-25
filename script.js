@@ -1,4 +1,4 @@
-const removeButton = document.getElementById("removeButton");
+const removeButton = document.getElementsByTagName("removeButton")[0];
 const colorSelect = document.getElementById("colorSelect");
 
 removeButton.addEventListener("click", function() {
