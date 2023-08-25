@@ -1,9 +1,8 @@
-const removeButton = document.getElementsByTagName("removeButton")[0];
-const colorSelect = document.getElementById("colorSelect");
+let btn=document.getElementsByTagName("input")[0];
+let colorSelect=document.getElementById("colorSelect");
+let call=function(){
+	colorSelect.remove();
+}
 
-removeButton.addEventListener("click", function() {
-  const selectedIndex = colorSelect.selectedIndex;
-  if (selectedIndex !== -1) {
-    colorSelect.options[selectedIndex].remove();
-  }
-});
+btn.addEventListener("click",call);
+
